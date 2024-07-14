@@ -3,14 +3,15 @@
   <PropertyGroup Label="Targets required for unit tests to run">
     <TargetFrameworkNetDesktop462>net462</TargetFrameworkNetDesktop462>
     <TargetFrameworkNetStandard>netstandard2.0</TargetFrameworkNetStandard>
-    <TargetFrameworkNet6>net6.0</TargetFrameworkNet6>
+    <TargetFrameworkNet6>net8.0</TargetFrameworkNet6>
     <Configurations>Debug;Release;Debug + MobileApps</Configurations>
+    
   </PropertyGroup>
 
   <!-- Mobile targets are disabled by default to speed up dev box -->
-  <PropertyGroup Condition="'$(INCLUDE_MOBILE_AND_LEGACY_TFM)' != ''">
-    <TargetFrameworkNet6Android>net6.0-android</TargetFrameworkNet6Android>
-    <TargetFrameworkNet6Ios>net6.0-ios15.4</TargetFrameworkNet6Ios>
+  <PropertyGroup>
+    <TargetFrameworkNet6Android>net8.0-android</TargetFrameworkNet6Android>
+    <TargetFrameworkNet6Ios>net8.0-ios15.4</TargetFrameworkNet6Ios>
   </PropertyGroup>
 
   <!-- net6.0 (MAUI) -->

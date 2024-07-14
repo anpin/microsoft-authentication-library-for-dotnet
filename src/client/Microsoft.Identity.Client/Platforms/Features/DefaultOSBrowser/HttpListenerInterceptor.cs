@@ -47,7 +47,7 @@ namespace Microsoft.Identity.Client.Platforms.Shared.DefaultOSBrowser
                     path = (path.StartsWith("/") ? path : "/" + path);
                 }
 
-                urlToListenTo = "http://localhost:" + port + path;
+                urlToListenTo = "http://127.0.0.1:" + port + path;
 
                 if (!urlToListenTo.EndsWith("/"))
                 {
